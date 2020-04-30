@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd">
+    <web-module id="APPS_HTML" path="file:/C:/OAF/jdevbin/jdev/myhtml/OA_HTML/"/>
+    <web-module id="APPS_HTML" path="file:/C:/OAF/jdevbin/jdev/myhtml/OA_HTML/"/>
+    <log>
+        <file path="srlFileUploading-oc4j-app.log"/>
+    </log>
+    <jazn provider="XML" location="FixedAssetsVerificationWS-jazn-data.xml"/>
+    <data-sources path="FixedAssetsVerificationWS-data-sources.xml"/>
+</orion-application>

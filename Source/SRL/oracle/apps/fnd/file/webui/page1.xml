@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="region1" amDefName="SRL.oracle.apps.fnd.file.server.UploadFileAM" controllerClass="SRL.oracle.apps.fnd.file.webui.FileController" windowTitle="Sapphire Attachment Form" title="Sapphire Attachment Form">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:table id="FileSetupVO1">
+               <ui:contents>
+                  <oa:messageStyledText id="SrlFileSetupId" dataType="VARCHAR2" prompt="Setup ID" viewName="FileSetupVO1" viewAttr="SrlFileSetupId" maximumLength="150" rendered="false"/>
+                  <oa:messageStyledText id="SrlFileGroupId" dataType="NUMBER" prompt="Group ID" viewName="FileSetupVO1" viewAttr="SrlFileGroupId" rendered="false"/>
+                  <oa:messageStyledText id="SrlFileGroupName" dataType="VARCHAR2" prompt="Group Name" viewName="FileSetupVO1" viewAttr="SrlFileGroupName" maximumLength="150"/>
+                  <oa:link id="SrlFileSubGroupName" viewName="FileSetupVO1" viewAttr="SrlFileSubGroupName" text="Sub Group Name">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="SubGroupName">
+                           <ui:parameters>
+                              <ui:parameter key="SrlFileSetupId" value="${oa.FileSetupVO1.SrlFileSetupId}"/>
+                           </ui:parameters>
+                        </ui:fireAction>
+                     </ui:primaryClientAction>
+                  </oa:link>
+                  <oa:messageStyledText id="SrlFileSubGroupDescription" dataType="VARCHAR2" prompt="Description" viewName="FileSetupVO1" viewAttr="SrlFileSubGroupDescription" maximumLength="150"/>
+                  <oa:messageStyledText id="SrlFileSizeAllowed" dataType="NUMBER" prompt="Size Allowed" viewName="FileSetupVO1" viewAttr="SrlFileSizeAllowed"/>
+                  <oa:messageStyledText id="SrlFileAllowedExtention" dataType="VARCHAR2" prompt="Allowed Extention" viewName="FileSetupVO1" viewAttr="SrlFileAllowedExtention" maximumLength="150"/>
+                  <oa:messageStyledText id="SrlFileServerPath" dataType="VARCHAR2" prompt="Path" viewName="FileSetupVO1" viewAttr="SrlFileServerPath" maximumLength="150"/>
+               </ui:contents>
+            </oa:table>
+            <oa:header id="region1015" text="Attachments list">
+               <ui:contents>
+                  <oa:messageStyledText id="DetailsText" prompt="Sub Group Name:" styleClass="OraDataText"/>
+                  <oa:table id="SrlFndAttachmentsView1">
+                     <ui:contents>
+                        <oa:formValue id="AttachmentsId" dataType="NUMBER" prompt="AttachmentsId" viewName="SrlFndAttachmentsView1" viewAttr="AttachmentsId" rendered="false"/>
+                        <oa:formValue id="ContentType" prompt="ContentType" viewName="SrlFndAttachmentsView1" rendered="false"/>
+                        <oa:formValue id="FormName" dataType="VARCHAR2" prompt="FormName" viewName="SrlFndAttachmentsView1" viewAttr="FormName"/>
+                        <oa:link id="Filename" viewName="SrlFndAttachmentsView1" viewAttr="Filename" text="File Name">
+                           <ui:primaryClientAction>
+                              <ui:fireAction event="Filename" id="fireAction212"/>
+                           </ui:primaryClientAction>
+                        </oa:link>
+                        <oa:messageStyledText id="CreatedBy" dataType="NUMBER" prompt="Created By" viewName="SrlFndAttachmentsView1" viewAttr="CreatedBy"/>
+                        <oa:messageStyledText id="CreationDate" dataType="DATE" prompt="Creation Date" viewName="SrlFndAttachmentsView1" viewAttr="CreationDate"/>
+                        <oa:messageStyledText id="TransactionId" dataType="NUMBER" prompt="Reference Number" viewName="SrlFndAttachmentsView1" viewAttr="TransactionId"/>
+                     </ui:contents>
+                  </oa:table>
+                  <oa:pageButtonBar id="AttachmentBar" rendered="true">
+                     <ui:contents>
+                        <oa:messageTextInput id="referenceNumber" prompt="Reference Number (Optional):" dataType="VARCHAR2"/>
+                        <oa:messageFileUpload id="AddAttachmentFile" dataType="BLOB" prompt="File :"/>
+                        <oa:submitButton id="UploadFileToDB" text="Add Attachment" prompt="Add Attachment">
+                           <ui:primaryClientAction>
+                              <ui:fireAction event="UploadFileToDB" id="fireAction211"/>
+                           </ui:primaryClientAction>
+                        </oa:submitButton>
+                        <oa:formValue id="SetupID" dataType="VARCHAR2"/>
+                     </ui:contents>
+                  </oa:pageButtonBar>
+               </ui:contents>
+            </oa:header>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

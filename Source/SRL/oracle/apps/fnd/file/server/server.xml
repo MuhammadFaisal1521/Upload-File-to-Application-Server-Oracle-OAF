@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="SRL.oracle.apps.fnd.file.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <Containee
+      Name="FileSetupVO"
+      FullName="SRL.oracle.apps.fnd.file.server.FileSetupVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="SrlFndAttachmentsView"
+      FullName="SRL.oracle.apps.fnd.file.server.SrlFndAttachmentsView"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="UploadFileAM"
+      FullName="SRL.oracle.apps.fnd.file.server.UploadFileAM"
+      ObjectType="AppModule" >
+   </Containee>
+</JboPackage>

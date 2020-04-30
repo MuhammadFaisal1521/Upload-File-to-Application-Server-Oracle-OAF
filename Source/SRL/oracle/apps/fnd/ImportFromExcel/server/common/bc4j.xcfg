@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="ImportExcelAMLocal">
+         <AppModuleJndiName>SRL.oracle.apps.fnd.ImportFromExcel.server.ImportExcelAM</AppModuleJndiName>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>machine1</JDBCName>
+         <ApplicationName>SRL.oracle.apps.fnd.ImportFromExcel.server.ImportExcelAM</ApplicationName>
+         <jbo.project>ImportFromExcel</jbo.project>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="machine1">
+      <ENTRY name="JDBC_PORT" value="1521"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="192.168.129.215"/>
+      <ENTRY name="user" value="Apps"/>
+      <ENTRY name="ConnectionName" value="machine1"/>
+      <ENTRY name="SID" value="prod"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05C3D0AEDC69DB76867883A1FBA57E82B6419038F62969A510]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

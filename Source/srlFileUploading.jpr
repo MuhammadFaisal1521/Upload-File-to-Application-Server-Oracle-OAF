@@ -1,0 +1,309 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.adf.dt.migration.ProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.adfdt.controller.jsf.addin.JSFProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.adfdtinternal.view.faces.addin.ADFFacesLibraryMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="10.1.3.3.0"/>
+      <value n="oracle.ide.model.Project" v="10.1.3.3.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jdeveloper.dbmodeler.migration.ProjectMigratorHelper" v="10.1.3.3.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jdeveloper.offlinedb.migration.OfflineDBProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jdevimpl.jsp.JsfLibraryMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="10.1.3.1.0"/>
+      <value n="oracle.jdevimpl.runner.RunConfigurationsMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="10.1.3.3.0"/>
+      <value n="oracle.jrad.design.ui.jide.oa.project.OAProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.tip.tools.ide.pm.addin.PMProjectMigrator" v="10.1.3.3.0"/>
+      <value n="oracle.toplink.addin.migration.TopLinkProjectMigrator" v="10.1.3.1.0"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.toplink.addin.TopLinkProjectSettings/toplinkContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.tip.tools.ide.pm.addin.PMProjectSettings/Integration_Content"/>
+   </list>
+   <value n="defaultPackage" v="SRL.oracle.apps.fnd.file.webui"/>
+   <hash n="ejbModuleContainer">
+      <value n="ejbVersion" v="NOT SPECIFIED"/>
+   </hash>
+   <value n="jbo.JboProject" v="srlFileUploading"/>
+   <value n="JboProject" v="true"/>
+   <value n="JRAD.IS_APPS_PROJECT" v="10.1.3_1312"/>
+   <value n="JRAD.JDEV_INSTALL_URL" v="C:\OAF\jdevbin\jdev\"/>
+   <value n="JRAD.PROJECT_URL" v="C:\OAF\jdevbin\jdev\myprojects\srlFileUploading.jpr"/>
+   <hash n="oracle.adf.mds.dt.ui.util.DBData">
+      <value n="reposConnectionName" v="machine1"/>
+      <value n="useRepository" v="true"/>
+   </hash>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="model/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="pattern-filters">
+            <string v="+*"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="OA"/>
+         <string v="ADFbc"/>
+         <string v="Java"/>
+         <string v="HTML"/>
+         <string v="General"/>
+      </list>
+   </hash>
+   <value n="oracle.jbo.extends.appModule" v="oracle.apps.fnd.framework.server.OAApplicationModuleImpl"/>
+   <value n="oracle.jbo.extends.entityColl" v="oracle.apps.fnd.framework.server.OAEntityCache"/>
+   <value n="oracle.jbo.extends.entityDef" v="oracle.apps.fnd.framework.server.OAEntityDefImpl"/>
+   <value n="oracle.jbo.extends.entityRow" v="oracle.apps.fnd.framework.server.OAEntityImpl"/>
+   <value n="oracle.jbo.extends.viewObj" v="oracle.apps.fnd.framework.server.OAViewObjectImpl"/>
+   <value n="oracle.jbo.extends.viewRow" v="oracle.apps.fnd.framework.server.OAViewRowImpl"/>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <list n="copyRes">
+         <string v=".gif"/>
+         <string v=".jpg"/>
+         <string v=".jpeg"/>
+         <string v=".png"/>
+         <string v=".properties"/>
+         <string v=".xml"/>
+         <string v="-apf.xml"/>
+         <string v=".ejx"/>
+         <string v=".xcfg"/>
+         <string v=".cpx"/>
+         <string v=".dcx"/>
+         <string v=".wsdl"/>
+         <string v=".ini"/>
+         <string v=".tld"/>
+         <string v=".tag"/>
+         <string v=".jpx"/>
+      </list>
+      <value n="internalEncoding" v="Cp1252"/>
+      <value n="showPartialImportWarnings" v="true"/>
+      <value n="showUnusedImportWarnings" v="true"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="APPS_HTML"/>
+      <value n="j2eeWebContextRoot" v="/OA_HTML"/>
+      <hash n="webContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="../myhtml/OA_HTML/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="pattern-filters">
+            <string v="+SRL/oracle/apps/fnd/file/"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="database/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DFND_JDBC_STMT_CACHE_SIZE=200 -DCACHENODBINIT=true -DRUN_FROM_JDEV=true -mx256m -XX:MaxPermSize=256M"/>
+            <value n="name" v="Default"/>
+            <url n="runDirectoryURL" path="../myclasses/"/>
+            <value n="VMName" v="hotspot"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Tester"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="JDeveloper Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Connection Manager"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J EJB Client"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J EJB Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J HTML"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Cabo"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="FND Libraries"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BIBEANS Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JTT Common"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="APPS Libraries"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS XML OA Common"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="MDS XML Apps Common"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Portal Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Service Library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Service Tester"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="../myclasses/"/>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">
+      <hash n="libraries">
+         <hash n="WEB-INF\oa.tld">
+            <list n="customizedTags"/>
+            <value n="jspVersion" v="1.1"/>
+            <value n="name" v="oa"/>
+            <value n="prefix" v="oa"/>
+            <value n="runInEditor" v="false"/>
+            <value n="showInPalette" v="true"/>
+            <value n="tldURL" v="WEB-INF/oa.tld"/>
+            <value n="URI" v="/WEB-INF/oa.tld"/>
+            <value n="version" v="1.0"/>
+         </hash>
+      </hash>
+   </hash>
+   <hash n="oracle.jrad.design.ui.jide.oa.project.JRADRunOptions">
+      <value n="selectedRunOptions" v="OADiagnostic;OADeveloperMode;OABackButtonTestMode;OAConnectionTestMode"/>
+   </hash>
+   <hash n="oracle.jrad.design.ui.jide.oa.project.JRADRuntimeData">
+      <value n="DBCFileName" v="PROD"/>
+      <value n="password" v="eRpSrl@1234"/>
+      <value n="respAppShortName" v="FND"/>
+      <value n="responsibility" v="APPLICATION_DEVELOPER"/>
+      <value n="userName" v="sysadmin"/>
+   </hash>
+   <hash n="oracle.tip.tools.ide.pm.addin.PMProjectSettings">
+      <hash n="Integration_Content">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.toplink.addin.TopLinkProjectSettings">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="toplink/"/>
+         </list>
+      </hash>
+   </hash>
+   <list n="ownerMap">
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/schema/server/server.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/schema/server/SrlFndAttachments.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/FileSetupVO.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/server.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/SrlFndAttachmentsView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/UploadFileAM.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/schema/server/SrlFndAttachmentsImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/FileSetupVOImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/FileSetupVORowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/SrlFndAttachmentsViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/SrlFndAttachmentsViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="SRL/oracle/apps/fnd/file/server/UploadFileAMImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="srlFileUploading.jpx"/></hash>
+   </list>
+</jpr:project>

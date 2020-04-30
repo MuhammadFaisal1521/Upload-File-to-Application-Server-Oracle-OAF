@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="SrlFndAttachmentsView"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="SRL.oracle.apps.fnd.file.server.SrlFndAttachmentsViewRowImpl"
+   ComponentClass="SRL.oracle.apps.fnd.file.server.SrlFndAttachmentsViewImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT SrlFndAttachments.TRANSACTION_ID, 
+       SrlFndAttachments.FILENAME, 
+       SrlFndAttachments.CREATION_DATE, 
+       SrlFndAttachments.CREATED_BY, 
+       SrlFndAttachments.LAST_UPDATED_BY, 
+       SrlFndAttachments.LAST_UPDATE_LOGIN, 
+       SrlFndAttachments.LAST_UPDATE_DATE, 
+       SrlFndAttachments.FORM_NAME, 
+       SrlFndAttachments.CONTENT_TYPE, 
+       SrlFndAttachments.ATTACHMENTS_ID,(select SRL_FILE_SUB_GROUP_NAME 
+from Q_SRL_FND_FILE_ATTACHMENT_V
+where SRL_FILE_SETUP_ID = form_name)SubGroupName
+FROM SRL_FND_ATTACHMENTS SrlFndAttachments
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="SrlFndAttachments"
+      Entity="SRL.oracle.apps.fnd.file.schema.server.SrlFndAttachments" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="TransactionId"
+      EntityAttrName="TransactionId"
+      EntityUsage="SrlFndAttachments"
+      AliasName="TRANSACTION_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Filename"
+      EntityAttrName="Filename"
+      EntityUsage="SrlFndAttachments"
+      AliasName="FILENAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="SrlFndAttachments"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="SrlFndAttachments"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="SrlFndAttachments"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="SrlFndAttachments"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="SrlFndAttachments"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FormName"
+      EntityAttrName="FormName"
+      EntityUsage="SrlFndAttachments"
+      AliasName="FORM_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ContentType"
+      EntityAttrName="ContentType"
+      EntityUsage="SrlFndAttachments"
+      AliasName="CONTENT_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AttachmentsId"
+      EntityAttrName="AttachmentsId"
+      EntityUsage="SrlFndAttachments"
+      AliasName="ATTACHMENTS_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Subgroupname"
+      IsPersistent="false"
+      Precision="150"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="SUBGROUPNAME"
+      Expression="SUBGROUPNAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="150" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

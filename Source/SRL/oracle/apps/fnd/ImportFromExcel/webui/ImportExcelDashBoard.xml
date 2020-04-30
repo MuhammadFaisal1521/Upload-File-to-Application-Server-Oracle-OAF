@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="region1" controllerClass="SRL.oracle.apps.fnd.ImportFromExcel.webui.ImportExcelDashBoardCO" amDefName="SRL.oracle.apps.fnd.ImportFromExcel.server.ImportExcelAM" windowTitle="Import from Excel" title="Import data from excel">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:header id="HeaderRegion">
+               <ui:contents>
+                  <oa:messageStyledText id="UserName" prompt="User Name"/>
+                  <oa:formValue id="UploadingSetupID"/>
+                  <oa:messageLovInput id="UploadingSetupName" prompt="Template for file Uploading" queryable="true" required="yes">
+                     <lovContents>
+                        <oa:listOfValues id="region3">
+                           <ui:contents>
+                              <oa:table name="region3" id="SetUpView1">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="FlexValue" dataType="VARCHAR2" prompt="FlexValue" viewName="SetUpView1" viewAttr="FlexValue" maximumLength="150"/>
+                                    <oa:messageStyledText id="Description" dataType="VARCHAR2" prompt="Description" viewName="SetUpView1" viewAttr="Description" maximumLength="240"/>
+                                 </ui:contents>
+                              </oa:table>
+                           </ui:contents>
+                        </oa:listOfValues>
+                     </lovContents>
+                     <lovMappings>
+                        <lovMap id="SetupName" lovItem="Description" resultTo="UploadingSetupName" criteriaFrom="UploadingSetupName"/>
+                        <lovMap id="SetupID" lovItem="FlexValue" resultTo="UploadingSetupID" criteriaFrom="UploadingSetupID"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:pageButtonBar id="region2">
+                     <ui:contents>
+                        <oa:submitButton id="CreateRecord" text="Create Record" prompt="Create Record">
+                           <ui:primaryClientAction>
+                              <ui:fireAction event="CreateRecord"/>
+                           </ui:primaryClientAction>
+                        </oa:submitButton>
+                        <oa:submitButton id="ViewRecord" text="View Existing Record" prompt="View Existing Record">
+                           <ui:primaryClientAction>
+                              <ui:fireAction event="ViewRecord"/>
+                           </ui:primaryClientAction>
+                        </oa:submitButton>
+                     </ui:contents>
+                  </oa:pageButtonBar>
+                  <oa:header id="DashBoardView1" text="File Uplaoding DashBoard">
+                     <ui:contents>
+                        <oa:messageStyledText id="TransactionId" viewName="DashBoardView1" viewAttr="TransactionId" sortState="yes"/>
+                        <oa:messageStyledText id="TransactionDate" dataType="VARCHAR2" prompt="Transaction Date" viewName="DashBoardView1" viewAttr="TransactionDate" maximumLength="11" sortState="yes"/>
+                        <oa:messageStyledText id="Description1" dataType="VARCHAR2" prompt="Description" viewName="DashBoardView1" viewAttr="Description" maximumLength="240" sortState="yes"/>
+                        <oa:link id="Filename" viewName="DashBoardView1" viewAttr="Filename"/>
+                        <oa:messageStyledText id="Remarks" dataType="VARCHAR2" prompt="Remarks" viewName="DashBoardView1" viewAttr="Remarks" maximumLength="200" sortState="yes"/>
+                        <oa:messageStyledText id="CreationDate" dataType="VARCHAR2" prompt="Creation Date" viewName="DashBoardView1" viewAttr="CreationDate" maximumLength="11" sortState="yes"/>
+                        <oa:messageStyledText id="UserName1" dataType="VARCHAR2" prompt="User Name" viewName="DashBoardView1" viewAttr="UserName" maximumLength="100" sortState="yes"/>
+                     </ui:contents>
+                  </oa:header>
+               </ui:contents>
+            </oa:header>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

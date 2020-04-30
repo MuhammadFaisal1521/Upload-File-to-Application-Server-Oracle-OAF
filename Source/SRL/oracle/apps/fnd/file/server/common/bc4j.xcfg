@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="UploadFileAMLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.project>srlFileUploading</jbo.project>
+         <AppModuleJndiName>SRL.oracle.apps.fnd.file.server.UploadFileAM</AppModuleJndiName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>SRL.oracle.apps.fnd.file.server.UploadFileAM</ApplicationName>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

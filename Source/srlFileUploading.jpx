@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   Name="srlFileUploading"
+   SeparateXMLFiles="true"
+   PackageName="" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_NamedConnection" Value="machine1" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_jprName" Value="srlFileUploading.jpr" />
+      <Attr Name="_appModuleNames0" Value="SRL.oracle.apps.fnd.file.server.UploadFileAM" />
+   </DesignTime>
+   <Containee
+      Name="server"
+      FullName="SRL.oracle.apps.fnd.file.schema.server.server"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="server"
+      FullName="SRL.oracle.apps.fnd.file.server.server"
+      ObjectType="JboPackage" >
+   </Containee>
+</JboProject>

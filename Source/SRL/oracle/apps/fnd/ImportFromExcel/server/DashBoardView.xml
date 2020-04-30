@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="DashBoardView"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="SRL.oracle.apps.fnd.ImportFromExcel.server.DashBoardViewRowImpl"
+   ComponentClass="SRL.oracle.apps.fnd.ImportFromExcel.server.DashBoardViewImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select TRANSACTION_ID , 
+         TO_CHAR(TRANSACTION_DATE,'DD-MON-RRRR')TRANSACTION_DATE,
+         SRL_FND_IMPXSL_SETUP_ID,
+         FV.DESCRIPTION, 
+         FILENAME, 
+         REMARKS, 
+         TO_CHAR(imp.CREATION_DATE ,'DD-MON-RRRR')CREATION_DATE, 
+         imp.CREATED_BY , 
+         fu.USER_NAME
+from STM_CUST.SRL_FND_IMPXSL_HEADER  imp , srl_fnd_flex_values fv , fnd_user fu 
+where fv.FLEX_VALUE = IMP.SRL_FND_IMPXSL_SETUP_ID
+and fu.USER_ID = imp.CREATED_BY
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="TransactionId"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="TRANSACTION_ID"
+      Expression="TRANSACTION_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TransactionDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="11"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TRANSACTION_DATE"
+      Expression="TRANSACTION_DATE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SrlFndImpxslSetupId"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="SRL_FND_IMPXSL_SETUP_ID"
+      Expression="SRL_FND_IMPXSL_SETUP_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Description"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="240"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCRIPTION"
+      Expression="DESCRIPTION"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Filename"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="200"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="FILENAME"
+      Expression="FILENAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="200" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Remarks"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="200"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="REMARKS"
+      Expression="REMARKS"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="200" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="11"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="CREATION_DATE"
+      Expression="CREATION_DATE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="11" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="20"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="CREATED_BY"
+      Expression="CREATED_BY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UserName"
+      IsUpdateable="false"
+      IsPersistent="false"
+      IsNotNull="true"
+      Precision="100"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="USER_NAME"
+      Expression="USER_NAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>
